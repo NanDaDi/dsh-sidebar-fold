@@ -1,0 +1,35 @@
+{
+	"name": "dsh-sidebar-fold",
+	"version": "0.4.1",
+	"type": "module",
+	"description": "把 DSH 侧栏里各插件加的入口（全局面板行 / ElectroLab / 侧栏底部动作区）收进一个可展开的「更多」按钮，并在应用「设置」里提供「侧栏收纳」分区逐项勾选；纯 DOM 包裹，不改任何其它插件的文件。",
+	"main": "lib/index.js",
+	"exports": {
+		".": { "default": "./lib/index.js" },
+		"./client": { "default": "./lib/client.js" }
+	},
+	"files": [
+		"lib",
+		"cordis.patch.yml",
+		"README.md",
+		"LICENSE"
+	],
+	"keywords": [
+		"dsh",
+		"dsh-plugin",
+		"sidebar",
+		"fold",
+		"collapse",
+		"ui"
+	],
+	"license": "MIT",
+	"author": "NanDaDi",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/NanDaDi/dsh-sidebar-fold.git"
+	},
+	"dsh": {
+		"bundle": { "patch": "./cordis.patch.yml" },
+		"client": { "inject": [], "platform": "web" }
+	}
+}

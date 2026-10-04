@@ -1,0 +1,7 @@
+# dsh-sidebar-fold bundle patch
+#
+# 本地插件的 `dsh.bundle.patch` 层：profile 启动时把它并进加载器，
+# 于是这个插件就像别的插件一样被加载（宿主半体 + 客户端半体）。
+- insert:
+    - id: sidebar-fold
+      name: 'dsh-sidebar-fold'
